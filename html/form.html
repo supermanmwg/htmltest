@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head> 
+<title> haha , I am a handsome boy!</title>
+</head>
+<Body>
+   <!--checkbox and radio-->
+	<form>
+		Please enter your name.<br>
+		<input type="text" name="feedback"> <br> <br>
+		Please select each of the following that you have. <br>
+		<input type="checkbox" name="items" value="car">Car <br>
+		<input type="checkbox" name="items" value="texi">Texi <br>
+		<input type="checkbox" name="items" value="haha">haha <br>
+		Please indicate your intelligence level<br>
+		<input type="radio"name="iq" value="high">High <br>
+		<input type="radio" name="iq" value="medium">Medium <br>
+		<input type="radio" name="iq" value="low">Low <br>
+	
+	</form>
+	
+	<!--passwd-->
+	<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+		<p>What is the secret password?</p>
+		<input type="password" name="userpasswd"> <br>
+		<input type="submit" value="Send">
+	</form>
+	
+	<!-- options -->
+	<form>
+		<select name="cities">
+			<option value="hk"> HongKong</option>
+			<option value="bj"> Beijing</option>
+			<option value="sh"> ShangHai</option>
+		</select>
+	</form>
+	
+	<!-- form attribute -->
+	<form>
+	<p>Please fill in the following information:</p>
+	<label for="firstname">First name:</label>
+	<input type="text" name="firstname" value="Dave" autofocus>
+	<br>
+	<label for="lastname">Last name:</label>
+	<input type="text" name="lastname" placeholder="Your last name is here">
+	<br>
+	<label for="age">age:</label>
+	<input type="text" name="age"  required>
+	<br>
+	<input type="submit" value="Submit">
+	</form>
+	
+	<!-- upload file -->
+	<form method="post" enctype="multipart/form-data" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+		<p>Select the file yout want to upload</p>
+		<input type="file" name="uploadfile">
+		
+		<p>Press this button to send it</p>
+		<input type="submit" value="Upload the file" >
+		
+	 
+	</form>
+</Body>
